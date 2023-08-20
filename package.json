@@ -1,7 +1,12 @@
 {
   "name": "onenord-vscode",
-  "displayName": "onenord-vscode",
+  "displayName": "OneNord",
   "description": "OneNord is a clean and vibrant theme that combines the Nord and Atom One Dark color palettes.",
+  "publisher": "s1e2b3i4",
+  "homepage": "https://github.com/s1e2b3i4/onenord-vscode",
+  "bugs": {
+    "url": "https://github.com/s1e2b3i4/onenord-vscode/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/s1e2b3i4/onenord-vscode"
@@ -9,8 +14,23 @@
   "license": "GNU GPLv3",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.79.0"
+    "vscode": "^1.12.0"
   },
+  "galleryBanner": {
+    "color": "#2E3440",
+    "theme": "dark"
+  },
+  "icon": "assets/pluginIcon.png",
+  "markdown": "github",
+  "keywords": [
+    "arctic",
+    "north",
+    "bluish",
+    "clean",
+    "elegant",
+    "onenord",
+    "onedark"
+  ],
   "categories": [
     "Themes"
   ],
