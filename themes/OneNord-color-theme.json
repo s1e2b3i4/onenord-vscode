@@ -1468,6 +1468,10 @@
       "regexp": "#88C0D0",
       "operator": "#B589D3",
       "decorator": "#81A1C1",
-      "module": "#C0D0E0"
+      "module": "#C0D0E0",
+      "property": "#81A1C1",
+      "struct": "#EBCB8B",
+      "class": "#EBCB8B",
+      "label": "#B988B0",
     },
   }
