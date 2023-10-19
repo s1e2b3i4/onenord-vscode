@@ -44,8 +44,8 @@
       "editorCursor.foreground": "#d8dee9",
       "editorHint.border": "#D08F7000",
       "editorHint.foreground": "#D08F70",
-      "editorIndentGuide.background": "#434c5eb3",
-      "editorIndentGuide.activeBackground": "#4c566a",
+      "editorIndentGuide.background1": "#434c5eb3",
+      "editorIndentGuide.activeBackground1": "#4c566a",
       "editorInlayHint.background": "#434c5e",
       "editorInlayHint.foreground": "#d8dee9",
       "editorLineNumber.foreground": "#4c566a",
@@ -125,14 +125,14 @@
       "extensionButton.prominentBackground": "#434c5e",
       "extensionButton.prominentHoverBackground": "#4c566a",
       "errorForeground": "#B84F59",
-      "gitDecoration.modifiedResourceForeground": "#D08F70",
+      "gitDecoration.modifiedResourceForeground": "#EBCB8B",
       "gitDecoration.deletedResourceForeground": "#B84F59",
       "gitDecoration.untrackedResourceForeground": "#a3be8c",
       "gitDecoration.ignoredResourceForeground": "#d8dee966",
       "gitDecoration.conflictingResourceForeground": "#5e81ac",
       "gitDecoration.submoduleResourceForeground": "#8fbcbb",
       "gitDecoration.stageDeletedResourceForeground": "#B84F59",
-      "gitDecoration.stageModifiedResourceForeground": "#D08F70",
+      "gitDecoration.stageModifiedResourceForeground": "#EBCB8B",
       "input.background": "#3b4252",
       "input.foreground": "#d8dee9",
       "input.placeholderForeground": "#d8dee999",
@@ -261,7 +261,7 @@
       "terminal.ansiBlack": "#3b4252",
       "terminal.ansiRed": "#B84F59",
       "terminal.ansiGreen": "#a3be8c",
-      "terminal.ansiYellow": "#D08F70",
+      "terminal.ansiYellow": "#EBCB8B",
       "terminal.ansiBlue": "#81a1c1",
       "terminal.ansiMagenta": "#b48ead",
       "terminal.ansiCyan": "#88c0d0",
@@ -269,7 +269,7 @@
       "terminal.ansiBrightBlack": "#4c566a",
       "terminal.ansiBrightRed": "#B84F59",
       "terminal.ansiBrightGreen": "#a3be8c",
-      "terminal.ansiBrightYellow": "#D08F70",
+      "terminal.ansiBrightYellow": "#EBCB8B",
       "terminal.ansiBrightBlue": "#81a1c1",
       "terminal.ansiBrightMagenta": "#b48ead",
       "terminal.ansiBrightCyan": "#8fbcbb",
@@ -1305,6 +1305,41 @@
       {
         "name": "[Rust] Interpolation Bracket Curly",
         "scope": "source.rust punctuation.definition.interpolation",
+        "settings": {
+          "foreground": "#88C0D0"
+        }
+      },
+      {
+        "name": "[Ruby] Superclass inheritance",
+        "scope": "source.ruby entity.other.inherited-class",
+        "settings": {
+          "foreground": "#EBCB8B"
+        }
+      },
+      {
+        "name": "[Ruby] Special method calls, namespaces and keyword method arguments punctuation",
+        "scope": ["source.ruby keyword.other.special-method", "source.ruby meta.function.method.with-arguments constant.other.symbol.hashkey.parameter.function punctuation.definition.constant", "source.ruby meta.function.method.with-arguments punctuation.separator.other"],
+        "settings": {
+          "foreground": "#81A1C1"
+        }
+      },
+      {
+        "name": "[Ruby] Instance, class and global variables",
+        "scope": ["source.ruby variable.other.readwrite.class", "source.ruby variable.other.readwrite.instance", "source.ruby punctuation.definition.variable", "source.ruby variable.other.readwrite.instance", "source.ruby variable.other.readwrite.global"],
+        "settings": {
+          "foreground": "#BF616A"
+        }
+      },
+      {
+        "name": "[Ruby] Operators",
+        "scope": ["source.ruby keyword.operator.assignment", "source.ruby punctuation.separator.key-value", "source.ruby keyword.operator.arithmetic", "source.ruby keyword.operator.comparison", "source.ruby keyword.operator.other", "source.ruby punctuation.separator.other", "source.ruby keyword.operator.assignment.augmented"],
+        "settings": {
+          "foreground": "#B589D3"
+        }
+      },
+      {
+        "name": "[Ruby] Symbols and punctuation",
+        "scope": ["source.ruby constant.language.symbol","source.ruby punctuation.definition.constant", "source.ruby constant.language.symbol.hashkey", "source.ruby punctuation.definition.constant.hashkey"],
         "settings": {
           "foreground": "#88C0D0"
         }
