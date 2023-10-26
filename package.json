@@ -42,5 +42,15 @@
         "path": "./themes/OneNord-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "vsce": "^1.97.0"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "package": "vsce package -o ./bin/one-nord.vsix",
+    "vscode:prepublish": "npm run build",
+    "vsce-publish": "vsce publish"
   }
 }
