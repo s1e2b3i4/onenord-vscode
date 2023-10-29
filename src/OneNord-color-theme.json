@@ -294,7 +294,7 @@
     "tokenColors": [
       {
         "settings": {
-          "foreground": "#C8D0E8",
+          "foreground": "#C8D0E8"
         }
       },
       {
@@ -362,7 +362,7 @@
         "name": "Entity Name Function",
         "scope": "entity.name.function",
         "settings": {
-          "foreground": "#81a1c1",
+          "foreground": "#81a1c1"
         }
       },
       {
@@ -398,14 +398,14 @@
         "name": "Invalid Deprecated",
         "scope": "invalid.deprecated",
         "settings": {
-          "foreground": "#D8DEE9",
+          "foreground": "#D8DEE9"
         }
       },
       {
         "name": "Invalid Illegal",
         "scope": "invalid.illegal",
         "settings": {
-          "foreground": "#D8DEE9",
+          "foreground": "#D8DEE9"
         }
       },
       {
@@ -1058,7 +1058,6 @@
         "scope": [
           "source.js meta.embedded.line meta.brace.square",
           "source.js meta.embedded.line meta.brace.round",
-          /* Required for extension `mgmcdermott.vscode-language-babel`. */
           "source.js string.quoted.template meta.brace.square",
           "source.js string.quoted.template meta.brace.round"
         ],
@@ -1561,6 +1560,6 @@
         "fontStyle": "italic"
       },
       "struct": "#EBCB8B",
-      "label": "#B988B0",
-    },
+      "label": "#B988B0"
+    }
   }

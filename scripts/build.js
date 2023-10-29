@@ -1,15 +1,24 @@
-// load modules
 const fs = require('fs');
-const yaml = require('js-yaml');
+const path = require('path');
+const generate = require('./generate');
 
-// choose a starting and ending location
-const starting_location = 'src/OneNord.yml'
-const ending_location = 'themes/OneNord-color-theme.json'
+const THEME_DIR = path.join(__dirname, '..', 'theme');
 
-// read the starting file and load the YAML data
-const starting_file = fs.readFileSync(starting_location, 'utf8')
-const yaml_theme = yaml.load(starting_file);
+if (!fs.existsSync(THEME_DIR)) {
+    fs.mkdirSync(THEME_DIR);
+}
 
-// convert the YAML to JSON and write to the ending file
-const json_theme = JSON.stringify(yaml_theme, null, 4)
-fs.writeFileSync(ending_location, json_theme);
+module.exports = async () => {
+    const { base } = await generate();
+
+    return Promise.all([
+        fs.promises.writeFile(
+            path.join(THEME_DIR, 'one-nord.json'),
+            JSON.stringify(base, null, 4)
+        ),
+    ]);
+};
+
+if (require.main === module) {
+    module.exports();
+}
