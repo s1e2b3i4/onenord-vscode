@@ -1268,6 +1268,41 @@
         }
       },
       {
+        "name": "[Python] Punctuation Separate Annotation Result",
+        "scope": "source.python punctuation.separator.annotation.result",
+        "settings": {
+          "foreground": "#D8DEE9"
+        }
+      },
+      {
+        "name": "[Python] Keyword Operator Comparison",
+        "scope": "source.python keyword.operator.comparison",
+        "settings": {
+          "foreground": "#5E81AC"
+        }
+      },
+      {
+        "name": "[Pip Requirements] Entity Name Class",
+        "scope": "source.pip-requirements entity.name.class",
+        "settings": {
+          "foreground": "#B589D3"
+        }
+      },
+      {
+        "name": "[Pip Requirements] Keyword Operator",
+        "scope": "source.pip-requirements keyword.operator",
+        "settings": {
+          "foreground": "#D8DEE9"
+        }
+      },
+      {
+        "name": "[Pip Requirements] Constant Numeric",
+        "scope": "source.pip-requirements constant.numeric",
+        "settings": {
+          "foreground": "#91C187"
+        }
+      },
+      {
         "name": "[Rust] Entity types",
         "scope": "",
         "settings": {
@@ -1472,12 +1507,23 @@
         "name": "[YAML] Entity Name Tag",
         "scope": "source.yaml entity.name.tag",
         "settings": {
-          "foreground": "#8FBCBB"
+          "foreground": "#B589D3"
+        }
+      },
+      {
+        "name": "[YAML] Constant Language",
+        "scope": "source.yaml constant.language",
+        "settings": {
+          "foreground": "#91C187"
         }
       }
     ],
     "semanticTokenColors": {
       "namespace": "#EBCB8B",
+      "namespace:dockerfile": {
+        "foreground": "#88C0D0",
+        "fontStyle": "italic"
+      },
       "type": "#EBCB8B",
       "class.declaration": "#EBCB8B",
       "class.builtin": "#88C0D0",
@@ -1485,26 +1531,35 @@
       "enum": "#EBCB8B",
       "typeParameter": "#EBCB8B",
       "parameter": "#D08F70",
+      "parameter:dockerfile": "#C0D0E0",
       "selfParameter": "#B589D3",
       "variable": "#C0D0E0",
       "variable:html": "#D57780",
       "variable.local:html": "#C0D0E0",
       "property:html": "#D57780",
+      "property:python": "#D8DEE9",
       "property.definition": "#81A1C1",
       "enumMember": "#D57780",
       "function": "#81A1C1",
       "function.builtin": "#88C0D0",
+      "function.decorator": "#EBCB8B",
       "method": "#81A1C1",
       "macro": "#D57780",
+      "macro:dockerfile": "#B589D3",
       "keyword": "#B589D3",
       "comment": "#6C7A96",
       "string": "#91C187",
       "number": "#D08F70",
       "regexp": "#88C0D0",
       "operator": "#B589D3",
+      "operator:python": "#5E81AC",
       "decorator": "#81A1C1",
       "module": "#C0D0E0",
       "property": "#81A1C1",
+      "property:dockerfile": {
+        "foreground": "#88C0D0",
+        "fontStyle": "italic"
+      },
       "struct": "#EBCB8B",
       "label": "#B988B0",
     },
