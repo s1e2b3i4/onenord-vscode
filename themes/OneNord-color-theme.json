@@ -1485,7 +1485,7 @@
           "source.ts variable.language.this",
           "source.ts variable.language.super",
           "source.tsx variable.language.this",
-          "source.tsx variable.language.super",
+          "source.tsx variable.language.super"
         ],
         "settings": {
           "foreground": "#B589D3"
