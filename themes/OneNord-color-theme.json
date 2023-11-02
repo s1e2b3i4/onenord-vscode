@@ -1519,15 +1519,15 @@
       }
     ],
     "semanticTokenColors": {
-      "namespace": "#EBCB8B",
+      "namespace": "#8FBCBB",
       "namespace:dockerfile": {
         "foreground": "#88C0D0",
         "fontStyle": "italic"
       },
-      "type": "#EBCB8B",
-      "class.declaration": "#EBCB8B",
+      "type": "#8FBCBB",
+      "class": "#EBCB8B",
       "class.builtin": "#88C0D0",
-      "interface": "#EBCB8B",
+      "interface": "#8FBCBB",
       "enum": "#EBCB8B",
       "typeParameter": "#EBCB8B",
       "parameter": "#D08F70",
