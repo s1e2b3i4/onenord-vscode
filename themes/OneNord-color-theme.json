@@ -1040,8 +1040,13 @@
         }
       },
       {
-        "name": "[JavaScript] Variable This",
-        "scope": "source.js variable.language.this",
+        "name": "[JavaScript] Variable This/Super",
+        "scope": [
+          "source.js variable.language.this",
+          "source.js variable.language.super",
+          "source.jsx variable.language.this",
+          "source.jsx variable.language.super"
+        ],
         "settings": {
           "foreground": "#B589D3"
         }
@@ -1472,6 +1477,18 @@
         ],
         "settings": {
           "foreground": "#ECEFF4"
+        }
+      },
+      {
+        "name": "[TypeScript] Variable This/Super",
+        "scope": [
+          "source.ts variable.language.this",
+          "source.ts variable.language.super",
+          "source.tsx variable.language.this",
+          "source.tsx variable.language.super",
+        ],
+        "settings": {
+          "foreground": "#B589D3"
         }
       },
       {
