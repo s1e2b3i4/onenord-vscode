@@ -330,7 +330,7 @@ colors:
   editorHoverWidget.background: *COMMENT                                       # Background color of the editor hover
   editorHoverWidget.border: *COMMENT                                           # Border color of the editor hover
 
-  editorMarkerNavigation.background: !alpha [ *BLUE_DARK, "C0" ]               # Editor marker navigation widget background
+  editorMarkerNavigation.background: *BGDark                                   # Editor marker navigation widget background
   editorMarkerNavigationError.background: !alpha [ *RED_DARK, "C0" ]           # Editor marker navigation widget error color
   editorMarkerNavigationWarning.background: !alpha [ *ORANGE, "C0" ]           # Editor marker navigation widget warning color
 
