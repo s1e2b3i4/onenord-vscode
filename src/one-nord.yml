@@ -68,7 +68,7 @@ one-nord:
     - &WHITE         !alpha [ *BLUE, "33" ]
     - &TAB_DROP_BG   !alpha [ *COMMENT, "99" ]
     # UI Variants
-    - &BGLighter     !alpha [ *HL3, "CC" ]
+    - &BGLighter     !alpha [ *HL3, "99" ]
     - &BGLight       '#2E3440'
     - &BGDark        '#3B4252'
     - &SHADOW        '#00000066'
