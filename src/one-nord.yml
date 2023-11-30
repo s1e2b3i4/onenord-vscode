@@ -63,12 +63,13 @@ one-nord:
     - &COLOR14       '#8FBCBB'
     - &COLOR15       '#ECEFF4'
   other:
-    - &LineHighlight !alpha [ *BLUE, "99" ]
+    - &LineHighlight !alpha [ *BLUE, "80" ]
     - &NonText       !alpha [ *HL4, "B3" ]
     - &WHITE         !alpha [ *BLUE, "33" ]
     - &TAB_DROP_BG   !alpha [ *COMMENT, "99" ]
     # UI Variants
     - &BGLighter     !alpha [ *HL3, "99" ]
+    - &BGDarker     !alpha [ *HL3, "80" ]
     - &BGLight       '#2E3440'
     - &BGDark        '#3B4252'
     - &SHADOW        '#00000066'
@@ -223,7 +224,7 @@ colors:
 
   editor.selectionBackground: *BGLighter                                       # Color of the editor selection
   editor.selectionHighlightBackground: *BGLighter                              # Color for regions with the same content as the selection
-  editor.inactiveSelectionBackground: *BGLighter                               # Color of the selection in an inactive editor
+  editor.inactiveSelectionBackground: *BGDarker                                # Color of the selection in an inactive editor
   editor.foldBackground: *BGLighter                                            # Background color for folded ranges
 
   editor.wordHighlightBackground: !alpha [ *BLUE, "66" ]                       # Background color of a symbol during read-access, for example when reading a variable
