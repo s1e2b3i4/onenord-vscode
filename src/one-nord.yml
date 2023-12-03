@@ -341,8 +341,8 @@ colors:
   peekViewEditor.matchHighlightBackground: !alpha [ *BLUE, "4D" ]              # Match highlight color in the peek view editor
   peekViewResult.background: *BGLight                                          # Background color of the peek view result list
   peekViewResult.fileForeground: *BLUE                                         # Foreground color for file nodes in the peek view result list
-  peekViewResult.lineForeground: !alpha [ *FG, "66" ]                                            # Foreground color for line nodes in the peek view result list
-  peekViewResult.matchHighlightBackground: !alpha [ *BLUE, "CC" ]              # Match highlight color in the peek view result list
+  peekViewResult.lineForeground: !alpha [ *FG, "b3" ]                          # Foreground color for line nodes in the peek view result list
+  peekViewResult.matchHighlightBackground: !alpha [ *BLUE, "80" ]              # Match highlight color in the peek view result list
   peekViewResult.selectionBackground: *HL3                                     # Background color of the selected entry in the peek view result list
   peekViewResult.selectionForeground: *FG                                      # Foreground color of the selected entry in the peek view result list
   peekViewTitle.background: *COMMENT                                           # Background color of the peek view title area
