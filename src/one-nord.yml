@@ -1302,7 +1302,7 @@ semanticTokenColors:
   variable:html: *RED
   variable.local:html: *BLUE_LIGHT
   property:html: *RED
-  property:python: *FG
+  property:python: *BLUE_LIGHT
   property.definition: *BLUE
   enumMember: *RED
   function: *BLUE
