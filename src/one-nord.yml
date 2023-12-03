@@ -1292,6 +1292,7 @@ semanticTokenColors:
   type: *YELLOW
   class.declaration: *YELLOW
   class.builtin: *CYAN
+  class.defaultLibrary: *GREEN_LIGHT
   interface: *YELLOW
   enum: *YELLOW
   typeParameter: *YELLOW
@@ -1300,10 +1301,12 @@ semanticTokenColors:
   selfParameter: *PURPLE
   variable: *BLUE_LIGHT
   variable:html: *RED
+  variable.defaultLibrary: *GREEN_LIGHT
   variable.local:html: *BLUE_LIGHT
   property:html: *RED
   property:python: *BLUE_LIGHT
   property.definition: *BLUE
+  property.defaultLibrary: *GREEN_LIGHT
   enumMember: *RED
   function: *BLUE
   function.builtin: *CYAN
