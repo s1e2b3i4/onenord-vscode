@@ -2,7 +2,8 @@ $schema: vscode://schemas/color-theme
 name: OneNord
 author: Ryan Mehri
 maintainers:
-  - Sebastian Tauchert <sebastiantauchert@gmail.com>eceff4
+  - Sebastian Tauchert <sebastiantauchert@gmail.com>
+  - Lorenzo Zabot <lorenzozabot@gmail.com>
 semanticClass: theme.one-nord
 semanticHighlighting: true
 type: dark
@@ -16,25 +17,25 @@ one-nord:
     - &FG_LIGHT_BLUE '#ECEFF4'
     - &GRAY          '#7E8491'
     - &GRAY_DARK     '#6C7A96'
-    - &GRAY_LIGHT    '#616e88'
+    - &GRAY_LIGHT    '#616E88'
     - &BLUE          '#81A1C1'
     - &BLUE_DARK     '#5E81AC'
     - &BLUE_LIGHT    '#C0D0E0'
     - &BLUE_NAVY     '#516394'
     - &COMMENT       '#3B4252'
     - &CYAN          '#88C0D0'
+    - &CYAN_LIGHT    '#8FBCBB'
     - &GREEN         '#91C187'
     - &GREEN_DARK    '#729555'
-    - &GREEN_LIGHT   '#8FBCBB'
-    - &GREEN_LIME    '#A3BE8C'
+    - &GREEN_LIGHT   '#A3BE8C'
     - &ORANGE        '#D08F70'
     - &ORANGE_DARK   '#D08770'
     - &ORANGE_LIGHT  '#D0AD88'
     - &PINK          '#E85B7A'
     - &PINK_DARK     '#E44675'
+    - &MAGENTA_DARK  '#B988B0'
+    - &MAGENTA_LIGHT '#B48EAD'
     - &PURPLE        '#B589D3'
-    - &PURPLE_DARK   '#B988B0'
-    - &PURPLE_LIGHT  '#B48EAD'
     - &RED           '#D57780'
     - &RED_DARK      '#B84F59'
     - &RED_LIGHT     '#DE878F'
@@ -80,14 +81,6 @@ colors:
   # Integrated Terminal Colors
   terminal.background: *BG
   terminal.foreground: *FG_DARK
-  terminal.ansiBrightBlack: *COLOR8
-  terminal.ansiBrightRed: *COLOR9
-  terminal.ansiBrightGreen: *COLOR10
-  terminal.ansiBrightYellow: *COLOR11
-  terminal.ansiBrightBlue: *COLOR12
-  terminal.ansiBrightMagenta: *COLOR13
-  terminal.ansiBrightCyan: *COLOR14
-  terminal.ansiBrightWhite: *COLOR15
   terminal.ansiBlack: *COLOR0
   terminal.ansiRed: *COLOR1
   terminal.ansiGreen: *COLOR2
@@ -96,6 +89,14 @@ colors:
   terminal.ansiMagenta: *COLOR5
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
+  terminal.ansiBrightBlack: *COLOR8
+  terminal.ansiBrightRed: *COLOR9
+  terminal.ansiBrightGreen: *COLOR10
+  terminal.ansiBrightYellow: *COLOR11
+  terminal.ansiBrightBlue: *COLOR12
+  terminal.ansiBrightMagenta: *COLOR13
+  terminal.ansiBrightCyan: *COLOR14
+  terminal.ansiBrightWhite: *COLOR15
   terminal.tab.activeBorder: *BLUE
 
   # Contrast Colors
@@ -259,9 +260,9 @@ colors:
   editorBracketHighlight.foreground1: *BLUE_DARK                               # Color of first pair of brackets
   editorBracketHighlight.foreground2: *BLUE                                    # Color of second pair of brackets
   editorBracketHighlight.foreground3: *BLUE_NAVY                               # Color of third pair of brackets
-  editorBracketHighlight.foreground4: *GREEN_LIGHT                             # Color of fourth pair of brackets
+  editorBracketHighlight.foreground4: *CYAN_LIGHT                             # Color of fourth pair of brackets
   editorBracketHighlight.foreground5: *CYAN                                    # Color of fifth pair of brackets
-  editorBracketHighlight.foreground6: *GREEN_LIGHT                             # Color of sixth pair of brackets
+  editorBracketHighlight.foreground6: *CYAN_LIGHT                             # Color of sixth pair of brackets
   editorBracketHighlight.unexpectedBracket.foreground: *RED_DARK               # Color of bracket matching error
 
   editorOverviewRuler.border: *COMMENT                                         # Color of the overview ruler border
@@ -271,7 +272,7 @@ colors:
   editorOverviewRuler.wordHighlightForeground: !alpha [ *BLUE, "66" ]
   editorOverviewRuler.wordHighlightStrongForeground: !alpha [ *BLUE, "66" ]
   editorOverviewRuler.modifiedForeground: *GREEN_DARK
-  editorOverviewRuler.addedForeground:    *GREEN_LIME
+  editorOverviewRuler.addedForeground:    *GREEN_LIGHT
   editorOverviewRuler.deletedForeground:  *RED_DARK
   editorOverviewRuler.errorForeground:    *RED_DARK
   editorOverviewRuler.warningForeground: *ORANGE
@@ -284,7 +285,7 @@ colors:
 
   editorGutter.background: *BGLight                                            # Background color of the editor gutter
   editorGutter.modifiedBackground: *GREEN                                      # Editor gutter background color for lines that are modified
-  editorGutter.addedBackground:    *GREEN_LIME                                 # Editor gutter background color for lines that are added
+  editorGutter.addedBackground:    *GREEN_LIGHT                                 # Editor gutter background color for lines that are added
   editorGutter.deletedBackground:  *RED_DARK                                   # Editor gutter background color for lines that are deleted
 
   editorHint.border: !alpha [ *ORANGE, "00" ]
@@ -301,10 +302,10 @@ colors:
   # Explorer Colors
   gitDecoration.modifiedResourceForeground: *YELLOW
   gitDecoration.deletedResourceForeground: *RED_DARK
-  gitDecoration.untrackedResourceForeground: *GREEN_LIME
+  gitDecoration.untrackedResourceForeground: *GREEN_LIGHT
   gitDecoration.ignoredResourceForeground: !alpha [ *FG, "66" ]
   gitDecoration.conflictingResourceForeground: *BLUE_DARK
-  gitDecoration.submoduleResourceForeground: *GREEN_LIGHT
+  gitDecoration.submoduleResourceForeground: *CYAN_LIGHT
   gitDecoration.stageDeletedResourceForeground: *RED_DARK
   gitDecoration.stageModifiedResourceForeground: *YELLOW
 
@@ -352,7 +353,7 @@ colors:
   # Merge Conflicts
   merge.currentHeaderBackground: !alpha [ *BLUE, "66" ]                        # Current header background in inline merge conflicts
   merge.currentContentBackground: !alpha [ *BLUE, "4D" ]                       # Current content background in inline merge conflicts
-  merge.incomingHeaderBackground: !alpha [ *GREEN_LIGHT, "66" ]                # Incoming header background in inline merge conflicts
+  merge.incomingHeaderBackground: !alpha [ *CYAN_LIGHT, "66" ]                # Incoming header background in inline merge conflicts
   merge.incomingContentBackground: !alpha [ *BLUE, "4d" ]                      # Incoming content background in inline merge conflicts
   merge.border: *BGDark                                                        # Border color on headers and the splitter in inline merge conflicts
   editorOverviewRuler.currentContentForeground: *COMMENT                       # Current overview ruler foreground for inline merge conflicts
@@ -461,7 +462,7 @@ colors:
   minimap.findMatchHighlight: *BLUE
   minimap.selectionHighlight: !alpha [ *BGLight, "CC" ]
   minimap.warningHighlight: !alpha [ *ORANGE, "CC" ]
-  minimapGutter.addedBackground: *GREEN_LIME
+  minimapGutter.addedBackground: *GREEN_LIGHT
   minimapGutter.deletedBackground: *RED_DARK
   minimapGutter.modifiedBackground: *ORANGE
   minimapSlider.activeBackground: !alpha [ *HL3, "AA" ]
@@ -482,7 +483,7 @@ colors:
   textCodeBlock.background: *HL4
   textLink.activeForeground: *BLUE
   textLink.foreground: *BLUE
-  textPreformat.foreground: *GREEN_LIGHT
+  textPreformat.foreground: *CYAN_LIGHT
   textSeparator.foreground: *FG_LIGHT
   tree.indentGuidesStroke: *GRAY_LIGHT
 
@@ -545,7 +546,7 @@ tokenColors:
     scope: entity.other.inherited-class
     settings:
       fontStyle: bold
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: Invalid Deprecated
     scope: invalid.deprecated
     settings:
@@ -591,7 +592,7 @@ tokenColors:
   - name: Markup Inserted
     scope: markup.inserted
     settings:
-      foreground: *GREEN_LIME
+      foreground: *GREEN_LIGHT
   - name: Meta Preprocessor
     scope: meta.preprocessor
     settings:
@@ -680,15 +681,15 @@ tokenColors:
   - name: Support Type
     scope: support.type
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: Support Type Exception
     scope: support.type.exception
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: Token Debug
     scope: token.debug-token
     settings:
-      foreground: *PURPLE_LIGHT
+      foreground: *MAGENTA_LIGHT
   - name: Token Error
     scope: token.error-token
     settings:
@@ -718,7 +719,7 @@ tokenColors:
       - source.c meta.preprocessor.include
       - source.c string.quoted.other.lt-gt.include
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[C/CPP] Conditional Directive'
     scope:
       - source.cpp keyword.control.directive.conditional
@@ -792,19 +793,19 @@ tokenColors:
   - name: '[diff] Meta Range Context'
     scope: source.diff meta.diff.range.context
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[diff] Meta Header From-File'
     scope: source.diff meta.diff.header.from-file
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[diff] Punctuation Definition From-File'
     scope: source.diff punctuation.definition.from-file
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[diff] Punctuation Definition Range'
     scope: source.diff punctuation.definition.range
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[diff] Punctuation Definition Separator'
     scope: source.diff punctuation.definition.separator
     settings:
@@ -812,7 +813,7 @@ tokenColors:
   - name: '[Elixir](JakeBecker.elixir-ls) module names'
     scope: entity.name.type.module.elixir
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Elixir](JakeBecker.elixir-ls) module attributes'
     scope: variable.other.readwrite.module.elixir
     settings:
@@ -826,7 +827,7 @@ tokenColors:
   - name: '[Elixir](JakeBecker.elixir-ls) modules'
     scope: variable.other.constant.elixir
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Go] String Format Placeholder'
     scope: source.go constant.other.placeholder.go
     settings:
@@ -842,21 +843,21 @@ tokenColors:
   - name: '[Java](JavaDoc) Keyword Other Documentation'
     scope: source.java keyword.other.documentation
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java](JavaDoc) Keyword Other Documentation Author'
     scope: source.java keyword.other.documentation.author.javadoc
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java](JavaDoc) Keyword Other Documentation Directive/Custom'
     scope:
       - source.java keyword.other.documentation.directive
       - source.java keyword.other.documentation.custom
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java](JavaDoc) Keyword Other Documentation See'
     scope: source.java keyword.other.documentation.see.javadoc
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java] Meta Method-Call'
     scope: source.java meta.method-call meta.method
     settings:
@@ -866,7 +867,7 @@ tokenColors:
       - source.java meta.tag.template.link.javadoc
       - source.java string.other.link.title.javadoc
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java](JavaDoc) Meta Tag Template Value'
     scope: source.java meta.tag.template.value.javadoc
     settings:
@@ -874,7 +875,7 @@ tokenColors:
   - name: '[Java](JavaDoc) Punctuation Definition Keyword'
     scope: source.java punctuation.definition.keyword.javadoc
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java](JavaDoc) Punctuation Definition Tag'
     scope:
       - source.java punctuation.definition.tag.begin.javadoc
@@ -884,15 +885,15 @@ tokenColors:
   - name: '[Java] Storage Modifier Import'
     scope: source.java storage.modifier.import
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java] Storage Modifier Package'
     scope: source.java storage.modifier.package
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java] Storage Type'
     scope: source.java storage.type
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java] Storage Type Annotation'
     scope: source.java storage.type.annotation
     settings:
@@ -900,7 +901,7 @@ tokenColors:
   - name: '[Java] Storage Type Generic'
     scope: source.java storage.type.generic
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Java] Storage Type Primitive'
     scope: source.java storage.type.primitive
     settings:
@@ -919,7 +920,7 @@ tokenColors:
   - name: '[JavaScript](JSDoc) Storage Type Class'
     scope: source.js storage.type.class.jsdoc
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[JavaScript] Function'
     scope: source.js storage.type.function
     settings:
@@ -999,7 +1000,7 @@ tokenColors:
       - text.html.markdown markup.fenced_code.block
       - text.html.markdown markup.fenced_code.block punctuation.definition
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Markdown] Markup Heading'
     scope: markup.heading
     settings:
@@ -1009,7 +1010,7 @@ tokenColors:
       - text.html.markdown markup.inline.raw
       - text.html.markdown markup.inline.raw punctuation.definition.raw
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Markdown] Markup Italic'
     scope: text.html.markdown markup.italic
     settings:
@@ -1025,7 +1026,7 @@ tokenColors:
   - name: '[Markdown] Markup Quote Punctuation Definition'
     scope: text.html.markdown beginning.punctuation.definition.quote
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[Markdown] Markup Quote Punctuation Definition'
     scope: text.html.markdown markup.quote
     settings:
@@ -1224,7 +1225,7 @@ tokenColors:
       - source.tsx entity.name.type
       - source.tsx entity.name.class
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[TypeScript] Static Class Support'
     scope:
       - source.ts support.constant.math
@@ -1234,7 +1235,7 @@ tokenColors:
       - source.tsx support.constant.dom
       - source.tsx support.constant.json
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[TypeScript] Variables'
     scope:
       - source.ts support.variable
@@ -1260,7 +1261,7 @@ tokenColors:
   - name: '[XML] Entity Name Tag Namespace'
     scope: text.xml entity.name.tag.namespace
     settings:
-      foreground: *GREEN_LIGHT
+      foreground: *CYAN_LIGHT
   - name: '[XML] Keyword Other Doctype'
     scope: text.xml keyword.other.doctype
     settings:
@@ -1292,7 +1293,7 @@ semanticTokenColors:
   type: *YELLOW
   class.declaration: *YELLOW
   class.builtin: *CYAN
-  class.defaultLibrary: *GREEN_LIGHT
+  class.defaultLibrary: *CYAN_LIGHT
   interface: *YELLOW
   enum: *YELLOW
   typeParameter: *YELLOW
@@ -1301,12 +1302,12 @@ semanticTokenColors:
   selfParameter: *PURPLE
   variable: *BLUE_LIGHT
   variable:html: *RED
-  variable.defaultLibrary: *GREEN_LIGHT
+  variable.defaultLibrary: *CYAN_LIGHT
   variable.local:html: *BLUE_LIGHT
   property:html: *RED
   property:python: *BLUE_LIGHT
   property.definition: *BLUE
-  property.defaultLibrary: *GREEN_LIGHT
+  property.defaultLibrary: *CYAN_LIGHT
   enumMember: *RED
   function: *BLUE
   function.builtin: *CYAN
@@ -1328,4 +1329,4 @@ semanticTokenColors:
     foreground: *CYAN
     fontStyle: italic
   struct: *YELLOW
-  label: *PURPLE_DARK
+  label: *MAGENTA_DARK
