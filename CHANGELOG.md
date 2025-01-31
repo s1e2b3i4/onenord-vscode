@@ -1,5 +1,11 @@
 # OneNord Changelog
 
+## [0.5.2] – 2025-01-31
+
+### Added
+
+- Add more colors for the csv rainbow extension
+
 ## [0.5.0] – 2024-03-02
 
 ### Updated
@@ -39,3 +45,4 @@
 [0.2.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.2.0
 [0.3.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.3.0
 [0.5.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.5.0
+[0.5.2]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.5.2
