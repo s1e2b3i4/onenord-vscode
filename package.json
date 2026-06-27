@@ -12,7 +12,7 @@
     "url": "https://github.com/s1e2b3i4/onenord-vscode"
   },
   "license": "GPL-3.0-or-later",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "engines": {
     "vscode": "^1.70.0"
   },
