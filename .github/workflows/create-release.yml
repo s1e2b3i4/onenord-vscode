@@ -3,6 +3,8 @@ on:
   push:
     tags:
       - 'v*'
+permissions:
+  contents: write
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -12,21 +14,9 @@ jobs:
         with:
           node-version: lts/*
           cache: npm
-      - run: npm install && mkdir -p ./bin
+      - run: npm ci && mkdir -p ./bin
       - run: npm run package
-      - uses: actions/create-release@v1
-        id: create_release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
           draft: true
-      - uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./bin/one-nord.vsix
-          asset_name: one-nord.vsix
-          asset_content_type: application/octet-stream
+          files: ./bin/one-nord.vsix

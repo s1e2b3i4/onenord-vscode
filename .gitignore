@@ -1,3 +1,4 @@
 node_modules
 *.vsix
-one-nord.json
+bin/
+theme/one-nord.json

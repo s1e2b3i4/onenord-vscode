@@ -2,7 +2,7 @@ $schema: vscode://schemas/color-theme
 name: OneNord
 author: Ryan Mehri
 maintainers:
-  - Sebastian Tauchert <sebastiantauchert@gmail.com>eceff4
+  - Sebastian Tauchert <sebastiantauchert@gmail.com>
 semanticClass: theme.one-nord
 semanticHighlighting: true
 type: dark
