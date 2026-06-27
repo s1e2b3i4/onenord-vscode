@@ -480,6 +480,13 @@ colors:
   notifications.border: *BGLight
   notifications.foreground: *FG
   notificationToast.border: *BGDark
+  notificationsErrorIcon.foreground: *RED
+  notificationsWarningIcon.foreground: *ORANGE
+  notificationsInfoIcon.foreground: *BLUE
+  # Banner
+  banner.background: *COMMENT
+  banner.foreground: *FG
+  banner.iconForeground: *BLUE
 
   # Sticky Scroll & Minimap
   editorStickyScroll.background: *BGLight                                       # Sticky scroll editor background
