@@ -98,6 +98,16 @@ colors:
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
   terminal.tab.activeBorder: *BLUE
+  terminalStickyScroll.background: *BGLight                                   # Terminal sticky scroll background
+  terminalStickyScrollHover.background: *COMMENT
+  terminal.findMatchBackground: !alpha [ *CYAN, "66" ]                        # Current terminal find match
+  terminal.findMatchHighlightBackground: !alpha [ *CYAN, "33" ]              # Other terminal find matches
+  terminal.hoverHighlightBackground: !alpha [ *HL3, "66" ]
+  terminalCommandDecoration.successBackground: *GREEN
+  terminalCommandDecoration.errorBackground: *RED
+  terminalCommandDecoration.defaultBackground: *GRAY
+  terminalOverviewRuler.findMatchForeground: *CYAN
+  terminalOverviewRuler.cursorForeground: *BLUE
 
   # Contrast Colors
   contrastBorder:                                                              # An extra border around elements to separate them from others for greater contrast
