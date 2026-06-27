@@ -532,7 +532,6 @@ colors:
   testing.iconSkipped: *GRAY
   testing.iconQueued: *ORANGE
   testing.runAction: *GREEN
-  testing.message.error.decorationForeground: *RED
   testing.message.info.decorationForeground: *BLUE
   # Comments
   commentsView.resolvedIcon: *GRAY
