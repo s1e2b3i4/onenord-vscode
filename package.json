@@ -11,10 +11,10 @@
     "type": "git",
     "url": "https://github.com/s1e2b3i4/onenord-vscode"
   },
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0-or-later",
   "version": "0.5.2",
   "engines": {
-    "vscode": "^1.12.0"
+    "vscode": "^1.70.0"
   },
   "galleryBanner": {
     "color": "#2E3440",
@@ -44,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.21.1",
+    "@vscode/vsce": "^3.2.1",
     "js-yaml": "^4.1.0"
   },
   "scripts": {
