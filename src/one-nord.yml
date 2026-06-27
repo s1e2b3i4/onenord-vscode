@@ -457,6 +457,12 @@ colors:
   notifications.foreground: *FG
   notificationToast.border: *BGDark
 
+  # Sticky Scroll & Minimap
+  editorStickyScroll.background: *BGLight                                       # Sticky scroll editor background
+  editorStickyScroll.border: *HL2                                              # Border below the sticky scroll widget
+  editorStickyScroll.shadow: *SHADOW
+  editorStickyScrollHover.background: *COMMENT                                 # Sticky scroll line hover background
+
   # Minimap
   minimap.errorHighlight: !alpha [ *RED_DARK, "CC" ]
   minimap.findMatchHighlight: *BLUE
