@@ -390,6 +390,16 @@ colors:
   titleBar.inactiveForeground: !alpha [ *FG, "66" ]                            # Title Bar foreground when the window is inactive
   titleBar.border: !alpha [ *BGLight, "00" ]
 
+  # Command Center
+  commandCenter.foreground: *FG                                               # Foreground color of the command center
+  commandCenter.activeForeground: *FG_LIGHT_BLUE                              # Active foreground color of the command center
+  commandCenter.background: *BGLight                                          # Background color of the command center
+  commandCenter.activeBackground: *COMMENT                                    # Active background color of the command center
+  commandCenter.border: *HL2                                                  # Border color of the command center
+  commandCenter.activeBorder: *BLUE                                           # Active border color of the command center
+  commandCenter.inactiveForeground: *GRAY                                     # Foreground when the window is inactive
+  commandCenter.inactiveBorder: *HL1
+
   # Extensions
   extensionButton.prominentForeground: *FG                                     # Extension view button foreground color (for example Install button)
   extensionButton.prominentBackground: *HL3                                    # Extension view button background color
