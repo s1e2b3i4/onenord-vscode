@@ -314,7 +314,21 @@ colors:
   diffEditor.insertedTextBorder:                                               # Outline color for inserted text
   diffEditor.removedTextBackground: !alpha [ *RED_DARK, "50" ]                 # Background color for removed text
   diffEditor.removedTextBorder:                                                # Outline color for removed text
+  # Chat & Inline Chat
+  chat.requestBackground: *BGLight                                            # Background of a chat request turn
+  chat.requestBorder: *HL2                                                    # Border of a chat request turn
+  chat.slashCommandBackground: !alpha [ *BLUE, "33" ]                         # Background of a slash command
+  chat.slashCommandForeground: *BLUE                                          # Foreground of a slash command
+  chat.avatarBackground: *COMMENT
+  chat.avatarForeground: *FG
+  inlineChat.background: *BGLight                                             # Background of the inline chat widget
+  inlineChat.border: *HL2                                                     # Border of the inline chat widget
+  inlineChat.shadow: *SHADOW
   inlineChat.regionHighlight: *BGLight                                         # Background color for the inline chat diff region
+  inlineChatInput.background: *COMMENT                                        # Inline chat input background
+  inlineChatInput.border: *HL2
+  inlineChatInput.focusBorder: *BLUE
+  inlineChatInput.placeholderForeground: !alpha [ *FG, "99" ]
 
   # Editor Widget Colors
   editorWidget.background: *BGLight                                            # Background color of editor widgets, such as Find/Replace
