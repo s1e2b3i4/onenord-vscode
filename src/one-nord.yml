@@ -525,6 +525,25 @@ colors:
   minimapSlider.background: !alpha [ *HL3, "99" ]
   minimapSlider.hoverBackground: !alpha [ *HL3, "AA" ]
 
+  # Testing
+  testing.iconPassed: *GREEN
+  testing.iconFailed: *RED
+  testing.iconErrored: *RED_DARK
+  testing.iconSkipped: *GRAY
+  testing.iconQueued: *ORANGE
+  testing.runAction: *GREEN
+  testing.message.error.decorationForeground: *RED
+  testing.message.info.decorationForeground: *BLUE
+  # Comments
+  commentsView.resolvedIcon: *GRAY
+  commentsView.unresolvedIcon: *BLUE
+  editorCommentsWidget.resolvedBorder: *HL2
+  editorCommentsWidget.unresolvedBorder: *BLUE
+  editorCommentsWidget.rangeBackground: !alpha [ *BLUE, "1A" ]
+  # Profile badge
+  profileBadge.background: *HL3
+  profileBadge.foreground: *FG
+
 # Misc
   menu.separatorBackground:                                                    # Color of a separator menu item in menus
   listFilterWidget.background: *BGLight                                        # Background color of the type filter widget in lists and trees.
