@@ -324,6 +324,13 @@ colors:
   diffEditor.insertedTextBorder:                                               # Outline color for inserted text
   diffEditor.removedTextBackground: !alpha [ *RED_DARK, "50" ]                 # Background color for removed text
   diffEditor.removedTextBorder:                                                # Outline color for removed text
+  diffEditor.insertedLineBackground: !alpha [ *GREEN, "1A" ]
+  diffEditor.removedLineBackground: !alpha [ *RED, "1A" ]
+  diffEditor.diagonalFill: *HL2                                                # Diagonal fill of the diff editor empty region
+  diffEditorGutter.insertedLineBackground: !alpha [ *GREEN, "33" ]
+  diffEditorGutter.removedLineBackground: !alpha [ *RED, "33" ]
+  diffEditorOverview.insertedForeground: !alpha [ *GREEN, "66" ]
+  diffEditorOverview.removedForeground: !alpha [ *RED, "66" ]
   # Chat & Inline Chat
   chat.requestBackground: *BGLight                                            # Background of a chat request turn
   chat.requestBorder: *HL2                                                    # Border of a chat request turn
@@ -380,6 +387,8 @@ colors:
   merge.incomingHeaderBackground: !alpha [ *GREEN_LIGHT, "66" ]                # Incoming header background in inline merge conflicts
   merge.incomingContentBackground: !alpha [ *BLUE, "4d" ]                      # Incoming content background in inline merge conflicts
   merge.border: *BGDark                                                        # Border color on headers and the splitter in inline merge conflicts
+  merge.commonHeaderBackground: !alpha [ *GRAY, "66" ]
+  merge.commonContentBackground: !alpha [ *GRAY, "26" ]
   editorOverviewRuler.currentContentForeground: *COMMENT                       # Current overview ruler foreground for inline merge conflicts
   editorOverviewRuler.incomingContentForeground: *COMMENT                      # Incoming overview ruler foreground for inline merge conflicts
 
