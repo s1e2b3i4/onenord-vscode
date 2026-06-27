@@ -1,5 +1,17 @@
 # OneNord Changelog
 
+## [0.6.0] – 2026-06-27
+
+### Added
+
+- Editor sticky scroll colors
+- Command center colors
+- Chat and inline chat colors
+- Notification icon and banner colors
+- Terminal sticky scroll, find match, and command decoration colors
+- Diff editor line/gutter/overview and merge editor colors
+- Testing, comments, and profile badge colors
+
 ## [0.5.2] – 2025-01-31
 
 ### Added
@@ -46,3 +58,4 @@
 [0.3.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.3.0
 [0.5.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.5.0
 [0.5.2]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.5.2
+[0.6.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.6.0
