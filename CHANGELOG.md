@@ -1,5 +1,17 @@
 # OneNord Changelog
 
+## [0.6.2] – 2026-08-01
+
+### Fixed
+
+- Distinguished `type`/`interface`/`namespace` from `class` in semantic colors, and broadened `class.declaration` to plain `class` so non-declaration references are colored too ([#19](https://github.com/s1e2b3i4/onenord-vscode/pull/19))
+- Filled in remaining find-match/word-highlight colors: `editor.wordHighlightTextBackground`, `searchEditor.findMatchBackground`, `editorOverviewRuler.wordHighlightTextForeground` ([#20](https://github.com/s1e2b3i4/onenord-vscode/issues/20))
+- Ported build script off js-yaml v4's removed `Type`/`DEFAULT_SCHEMA` API to v5's `defineSequenceTag`/`YAML11_SCHEMA`
+
+### Security
+
+- Bumped `@vscode/vsce`, `js-yaml`, and transitive deps (`tar-fs`, `tmp`, `minimatch`, `brace-expansion`, `qs`, `markdown-it`, `linkify-it`) to resolve all open Dependabot alerts
+
 ## [0.6.1] – 2026-08-01
 
 ### Added
@@ -72,3 +84,4 @@
 [0.5.2]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.5.2
 [0.6.0]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.6.0
 [0.6.1]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.6.1
+[0.6.2]: https://github.com/s1e2b3i4/onenord-vscode/commits/v0.6.2
