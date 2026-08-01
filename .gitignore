@@ -2,3 +2,4 @@ node_modules
 *.vsix
 bin/
 theme/one-nord.json
+docs/

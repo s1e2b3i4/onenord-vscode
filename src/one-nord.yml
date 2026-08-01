@@ -249,7 +249,7 @@ colors:
   editor.lineHighlightBackground: *COMMENT                                     # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder: *COMMENT                                         # Background color for the border around the line at the cursor position
 
-  editorLink.activeForeground: *BLUE                                           # Color of active links
+  editorLink.activeForeground: *GRAY                                           # Color of active links
   editor.rangeHighlightBackground: !alpha [ *HL3, "52" ]                       # Background color of highlighted ranges, like by Quick Open and Find features
 
   editor.snippetTabstopHighlightBackground: *BG                                # Highlight background color of a snippet tabstop
@@ -1093,6 +1093,11 @@ tokenColors:
     scope: text.html.markdown markup.underline.link
     settings:
       fontStyle: underline
+  - name: Inline URL In String
+    scope: markup.underline.link.inline.onenord
+    settings:
+      foreground: *GRAY
+      fontStyle: underline
   - name: '[Markdown] Markup List Numbered/Unnumbered'
     scope: text.html.markdown beginning.punctuation.definition.list
     settings:
@@ -1414,6 +1419,7 @@ semanticTokenColors:
   operator:python: *BLUE_DARK
   decorator: *BLUE
   module: *BLUE_LIGHT
+  module.decorator: *YELLOW
   property: *BLUE
   property:dockerfile:
     foreground: *CYAN
