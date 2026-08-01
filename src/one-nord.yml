@@ -239,10 +239,12 @@ colors:
 
   editor.wordHighlightBackground: !alpha [ *BLUE, "66" ]                       # Background color of a symbol during read-access, for example when reading a variable
   editor.wordHighlightStrongBackground: *LineHighlight                         # Background color of a symbol during write-access, for example when writing to a variable
+  editor.wordHighlightTextBackground: !alpha [ *BLUE, "66" ]                   # Background color of a textual occurrence for a symbol
 
   editor.findMatchBackground: !alpha [ *BLUE, "66" ]
   editor.findMatchHighlightBackground: *WHITE                                  # Color of the other search matches
   editor.findRangeHighlightBackground: *WHITE                                  # Color the range limiting the search
+  searchEditor.findMatchBackground: *WHITE                                     # Color of the search editor's match highlights
 
   editor.hoverHighlightBackground: *COMMENT                                    # Highlight below the word for which a hover is shown
 
@@ -281,6 +283,7 @@ colors:
   editorOverviewRuler.selectionHighlightForeground: !alpha [ *BLUE, "66" ]
   editorOverviewRuler.wordHighlightForeground: !alpha [ *BLUE, "66" ]
   editorOverviewRuler.wordHighlightStrongForeground: !alpha [ *BLUE, "66" ]
+  editorOverviewRuler.wordHighlightTextForeground: !alpha [ *BLUE, "66" ]
   editorOverviewRuler.modifiedForeground: *GREEN_DARK
   editorOverviewRuler.addedForeground:    *GREEN_LIME
   editorOverviewRuler.deletedForeground:  *RED_DARK
@@ -1381,15 +1384,15 @@ tokenColors:
     settings:
       foreground: *GREEN_LIME
 semanticTokenColors:
-  namespace: *YELLOW
+  namespace: *GREEN_LIGHT
   namespace:dockerfile:
     foreground: *CYAN
     fontStyle: italic
-  type: *YELLOW
-  class.declaration: *YELLOW
+  type: *GREEN_LIGHT
+  class: *YELLOW
   class.builtin: *CYAN
   class.defaultLibrary: *GREEN_LIGHT
-  interface: *YELLOW
+  interface: *GREEN_LIGHT
   enum: *YELLOW
   typeParameter: *YELLOW
   parameter: *ORANGE
