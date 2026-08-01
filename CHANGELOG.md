@@ -1,5 +1,17 @@
 # OneNord Changelog
 
+## [0.6.1] – 2026-08-01
+
+### Added
+
+- Inline URL link injection grammar (highlights URLs inside strings across languages)
+- Editor sticky scroll link color
+- Module decorator semantic color
+
+### Fixed
+
+- Removed invalid `testing.message.error.decorationForeground` key
+
 ## [0.6.0] – 2026-06-27
 
 ### Added
