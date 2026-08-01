@@ -16,7 +16,7 @@ jobs:
           cache: npm
       - run: npm ci && mkdir -p ./bin
       - run: npm run package
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           draft: true
           files: ./bin/one-nord.vsix
