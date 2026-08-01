@@ -1,14 +1,16 @@
 const { readFile } = require('fs').promises;
 const { join } = require('path');
-const { Type, DEFAULT_SCHEMA, load } = require('js-yaml');
+const { defineSequenceTag, YAML11_SCHEMA, load } = require('js-yaml');
 
-const withAlphaType = new Type('!alpha', {
-    kind: 'sequence',
-    construct: ([hexRGB, alpha]) => hexRGB.concat(alpha),
-    represent: ([hexRGB, alpha]) => hexRGB.concat(alpha),
+const withAlphaTag = defineSequenceTag('!alpha', {
+    create: () => [],
+    addItem: (carrier, item) => {
+        carrier.push(item);
+    },
+    finalize: ([hexRGB, alpha]) => hexRGB.concat(alpha),
 });
 
-const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
+const schema = YAML11_SCHEMA.withTags(withAlphaTag);
 
 module.exports = async () => {
     const yamlFile = await readFile(
