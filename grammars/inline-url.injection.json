@@ -1,0 +1,10 @@
+{
+  "scopeName": "onenord.inline-url.injection",
+  "injectionSelector": "L:string -comment -markup.underline.link",
+  "patterns": [
+    {
+      "match": "\\b[a-zA-Z][a-zA-Z0-9+.-]*://[^\\s\"'`)>\\]]+",
+      "name": "markup.underline.link.inline.onenord"
+    }
+  ]
+}

@@ -14,7 +14,7 @@
   "license": "GPL-3.0-or-later",
   "version": "0.6.0",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.90.0"
   },
   "galleryBanner": {
     "color": "#2E3440",
@@ -40,6 +40,32 @@
         "label": "OneNord",
         "uiTheme": "vs-dark",
         "path": "./theme/one-nord.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "onenord.inline-url.injection",
+        "path": "./grammars/inline-url.injection.json",
+        "injectTo": [
+          "source.python",
+          "source.js",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "source.go",
+          "source.rust",
+          "source.java",
+          "source.c",
+          "source.cpp",
+          "source.cs",
+          "source.php",
+          "source.ruby",
+          "source.shell",
+          "source.json",
+          "source.jsonc",
+          "source.yaml",
+          "source.toml"
+        ]
       }
     ]
   },
