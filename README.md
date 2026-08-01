@@ -1,7 +1,7 @@
 # 🏔 OneNord for Visual Studio Code
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/s1e2b3i4.onenord-vscode)](https://marketplace.visualstudio.com/items?itemName=s1e2b3i4.onenord-vscode)
-[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/s1e2b3i4.onenord-vscode)](https://marketplace.visualstudio.com/items?itemName=s1e2b3i4.onenord-vscode)
+[![Visual Studio Marketplace Version](https://vsmarketplacebadges.dev/version/s1e2b3i4.onenord-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=s1e2b3i4.onenord-vscode)
+[![Visual Studio Marketplace Installs](https://vsmarketplacebadges.dev/installs/s1e2b3i4.onenord-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=s1e2b3i4.onenord-vscode)
 
 ![Screenshot of some Python code to showcase the theme](https://github.com/s1e2b3i4/onenord-vscode/assets/28140755/c0617326-0b47-4a1f-9931-946793424d36)
 
