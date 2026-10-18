@@ -30,6 +30,7 @@ The theme is generated from a single source file, `src/one-nord.yml`. Never edit
 ```sh
 npm install
 npm run build      # regenerate theme/one-nord.json from src/one-nord.yml
+npm test           # check the compiled theme (valid colors, no duplicate scopes)
 npm run package    # build the .vsix into ./bin
 ```
 

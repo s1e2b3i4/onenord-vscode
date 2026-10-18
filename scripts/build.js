@@ -1,22 +1,18 @@
 const fs = require('fs');
 const path = require('path');
-const generate = require('./generate');
+const compileTheme = require('./compile-theme');
 
+const SOURCE = path.join(__dirname, '..', 'src', 'one-nord.yml');
 const THEME_DIR = path.join(__dirname, '..', 'theme');
 
-if (!fs.existsSync(THEME_DIR)) {
-    fs.mkdirSync(THEME_DIR);
-}
-
 module.exports = async () => {
-    const { base } = await generate();
+    const theme = compileTheme(await fs.promises.readFile(SOURCE, 'utf-8'));
 
-    return Promise.all([
-        fs.promises.writeFile(
-            path.join(THEME_DIR, 'one-nord.json'),
-            JSON.stringify(base, null, 4)
-        ),
-    ]);
+    await fs.promises.mkdir(THEME_DIR, { recursive: true });
+    await fs.promises.writeFile(
+        path.join(THEME_DIR, 'one-nord.json'),
+        JSON.stringify(theme, null, 4)
+    );
 };
 
 if (require.main === module) {

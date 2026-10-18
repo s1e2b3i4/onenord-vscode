@@ -15,5 +15,5 @@ jobs:
       - run: npm ci
       - name: Build theme from source
         run: npm run build
-      - name: Validate generated JSON
-        run: node -e "JSON.parse(require('fs').readFileSync('theme/one-nord.json','utf8'))"
+      - name: Test theme
+        run: npm test
