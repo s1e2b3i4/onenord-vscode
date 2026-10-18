@@ -1,5 +1,11 @@
 # OneNord Changelog
 
+## [0.6.3] – 2026-10-18
+
+### Security
+
+- Bumped `js-yaml` to 5.4.3, `@vscode/vsce` to 4.0.0, and transitive `qs` to 6.16.1 to resolve all open npm audit findings ([#33](https://github.com/s1e2b3i4/onenord-vscode/pull/33), [#34](https://github.com/s1e2b3i4/onenord-vscode/pull/34))
+
 ## [0.6.2] – 2026-08-01
 
 ### Fixed
