@@ -1240,7 +1240,6 @@ tokenColors:
       - source.ruby variable.other.readwrite.class
       - source.ruby variable.other.readwrite.instance
       - source.ruby punctuation.definition.variable
-      - source.ruby variable.other.readwrite.instance
       - source.ruby variable.other.readwrite.global
     settings:
       foreground: *RED_DARK
