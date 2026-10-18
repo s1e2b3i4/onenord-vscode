@@ -1,5 +1,16 @@
 # OneNord Changelog
 
+## [0.6.4] – 2026-10-18
+
+### Fixed
+
+- Removed a duplicate `source.ruby variable.other.readwrite.instance` scope from the Ruby variables rule
+
+### Changed
+
+- Build: extracted the YAML-to-theme step into a pure `compileTheme` function and added a `node:test` suite (valid hex colors, no duplicate scopes) that runs in CI via `npm test`
+- Release and deploy workflows now run `npm test` and abort on failure before packaging or publishing
+
 ## [0.6.3] – 2026-10-18
 
 ### Security
