@@ -15,6 +15,7 @@ jobs:
           node-version: lts/*
           cache: npm
       - run: npm ci && mkdir -p ./bin
+      - run: npm test
       - run: npm run package
       - uses: softprops/action-gh-release@v3
         with:
