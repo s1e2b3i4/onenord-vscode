@@ -75,7 +75,7 @@
   },
   "scripts": {
     "build": "node ./scripts/build.js",
-    "test": "node --test test/",
+    "test": "node --test",
     "package": "vsce package -o ./bin/one-nord.vsix",
     "vscode:prepublish": "npm run build",
     "vsce-publish": "vsce publish"
