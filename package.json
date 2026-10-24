@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@vscode/vsce": "^4.0.0",
-    "js-yaml": "^5.4.3"
+    "js-yaml": "^5.5.0"
   },
   "scripts": {
     "build": "node ./scripts/build.js",
