@@ -70,7 +70,7 @@
     ]
   },
   "devDependencies": {
-    "@vscode/vsce": "^4.0.0",
+    "@vscode/vsce": "^4.1.0",
     "js-yaml": "^5.4.3"
   },
   "scripts": {
